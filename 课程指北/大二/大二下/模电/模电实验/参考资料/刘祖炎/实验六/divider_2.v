@@ -1,0 +1,24 @@
+/*******************************************
+时钟分频器
+
+*******************************************/
+module ClkDivider(
+  clk_inner,
+  clk_cnt,
+  Cout,
+  );
+
+input clk_inner, clk_cnt;
+output Cout;
+reg Cout = 1'b0;
+reg [12:0] clk_cnt_arr = 13'b0000000000000;
+always @(posedge clk_inner)
+begin
+    clk_cnt_arr = {clk_cnt, clk_cnt_arr[12:1]};
+	 if (clk_cnt_arr == 13'b1111000000000)
+	     begin
+		      Cout = ~Cout;
+		  end
+end
+
+endmodule

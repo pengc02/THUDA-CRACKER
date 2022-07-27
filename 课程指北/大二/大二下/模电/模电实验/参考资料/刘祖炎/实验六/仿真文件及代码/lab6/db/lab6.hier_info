@@ -1,0 +1,25 @@
+|lab6
+output <= ClkDivider:inst.Cout
+clk_in => ClkDivider:inst.clk_inner
+clk_out => ClkDivider:inst.clk_cnt
+
+
+|lab6|ClkDivider:inst
+clk_inner => Cout~reg0.CLK
+clk_inner => clk_cnt_arr[1].CLK
+clk_inner => clk_cnt_arr[2].CLK
+clk_inner => clk_cnt_arr[3].CLK
+clk_inner => clk_cnt_arr[4].CLK
+clk_inner => clk_cnt_arr[5].CLK
+clk_inner => clk_cnt_arr[6].CLK
+clk_inner => clk_cnt_arr[7].CLK
+clk_inner => clk_cnt_arr[8].CLK
+clk_inner => clk_cnt_arr[9].CLK
+clk_inner => clk_cnt_arr[10].CLK
+clk_inner => clk_cnt_arr[11].CLK
+clk_inner => clk_cnt_arr[12].CLK
+clk_cnt => clk_cnt_arr[12].DATAIN
+clk_cnt => Equal0.IN0
+Cout <= Cout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

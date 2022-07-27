@@ -1,0 +1,16 @@
+Fitter Status : Successful - Fri Jun 11 16:47:27 2021
+Quartus II 64-Bit Version : 13.0.0 Build 156 04/24/2013 SJ Full Version
+Revision Name : lab6
+Top-level Entity Name : lab6
+Family : Cyclone II
+Device : EP2C5Q208C8
+Timing Models : Final
+Total logic elements : 16 / 4,608 ( < 1 % )
+    Total combinational functions : 5 / 4,608 ( < 1 % )
+    Dedicated logic registers : 13 / 4,608 ( < 1 % )
+Total registers : 13
+Total pins : 3 / 142 ( 2 % )
+Total virtual pins : 0
+Total memory bits : 0 / 119,808 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 26 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )
